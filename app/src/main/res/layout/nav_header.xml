@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="178dp"
+    android:gravity="bottom"
+    android:background="@drawable/waves_bg_png"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center|bottom"
+        android:text="Parkfait."
+        android:textColor="@color/white"
+        android:textSize="50sp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center|top"
+        android:paddingEnd="10dp"
+        android:text="v2.1.4"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>

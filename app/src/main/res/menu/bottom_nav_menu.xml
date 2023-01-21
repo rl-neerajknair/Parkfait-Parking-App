@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="List"
+        android:icon="@drawable/list_vertical"
+        android:id="@+id/list_btn"/>
+    <item android:title="Grid"
+        android:icon="@drawable/grid"
+        android:id="@+id/grid_btn"/>
+    <item android:title=""
+        android:icon="@drawable/add"
+        android:id="@+id/add_btn"/>
+    <item android:title="History"
+        android:icon="@drawable/search"
+        android:id="@+id/search_master_db_btn"/>
+    <item android:title="Analytics"
+        android:icon="@drawable/analytics"
+        android:id="@+id/analytics_btn"/>
+
+</menu>

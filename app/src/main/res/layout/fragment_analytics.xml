@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AnalyticsFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/white_gradient_bg">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:padding="20dp"
+                app:cardBackgroundColor="@color/theme_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Analytics"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_margin="10dp"
+                    android:paddingHorizontal="10dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/lineGraph_cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginVertical="20dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:padding="20dp"
+                        app:cardBackgroundColor="@color/white">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Line-Chart"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="10dp"/>
+                            <LinearLayout
+                                android:id="@+id/lineGraph_linearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Line graph to show the comparison for amount collected each day :"
+                                    android:textSize="18sp"
+                                    android:layout_marginHorizontal="20dp"/>
+
+                                <com.github.mikephil.charting.charts.LineChart
+                                    android:id="@+id/lineChart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:layout_margin="20dp"></com.github.mikephil.charting.charts.LineChart>
+                            </LinearLayout>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/barGraph_cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginVertical="20dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:padding="20dp"
+                        app:cardBackgroundColor="@color/white">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Bar-Chart"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="10dp"/>
+                            <LinearLayout
+                                android:id="@+id/barGraph_linearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Line graph to show the comparison for amount collected each day :"
+                                    android:textSize="18sp"
+                                    android:layout_marginHorizontal="20dp"/>
+
+                                <com.github.mikephil.charting.charts.HorizontalBarChart
+                                    android:id="@+id/barChart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:layout_margin="20dp"></com.github.mikephil.charting.charts.HorizontalBarChart>
+
+
+                            </LinearLayout>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

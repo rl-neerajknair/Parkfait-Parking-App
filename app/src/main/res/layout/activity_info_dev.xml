@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InfoDevActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_info_dev"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/theme_color"
+        android:theme="@style/Theme.NewMenuButtonBG" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About the Developer"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:paddingHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        app:srcCompat="@drawable/my_dev_pic"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi there!"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginHorizontal="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="My name is Neeraj K Nair and I am the developer of this app called Parkfait.\n\nI am a student pursuing my masters in Computer Applications and I'm also an aspiring android developer.\n\nArmed with about 7 years of hobbyist experience in graphic designing, I hope to bring in my creative thoughts and ideologies towards making applications such as these with the prime focus towards user-friendliness and innovation.\n\nConnect with me on my socials : "
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/socials_github"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text=""
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/github_logo_socials"/>
+
+
+        <Button
+            android:id="@+id/socials_linkedin"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text=""
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/linkedin_logo_socials"/>
+
+
+        <Button
+            android:id="@+id/socials_instagram"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text=""
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/instagram_logo_socials"/>
+    </LinearLayout>
+
+
+</LinearLayout>
